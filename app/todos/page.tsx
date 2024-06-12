@@ -3,7 +3,7 @@ import Image from "next/image";
 export default async function Home() {
   const response=await fetch("https://sum-server.100xdevs.com/todos",{
     next:{
-      revalidate:10
+        revalidate:10
     }
   })
   const data=await response.json();
